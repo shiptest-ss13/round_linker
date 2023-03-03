@@ -3,6 +3,9 @@ description: 'Links Round IDs found in issue body'
 inputs: 
   repo-token:
     description: 'The GITHUB_TOKEN secret'
+    required: true
+  link-url:
+    description: 'The URL to link to'
 runs:
-  using: 'node12'
+  using: 'node16'
   main: 'dist/index.js'
